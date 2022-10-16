@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  bb-app:
+    image: docker-ms-app:1.11
+    ports:
+      - "8090:8080"
