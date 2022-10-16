@@ -1,0 +1,20 @@
+services:
+  myfirstapp:
+    image: docker-ms:1.10
+    ports:
+      - 8090:8080
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+       key1: value1
+
+  secondApp:
+    image: hemantapaudel/docker-ms:1.10
+    ports:
+      - 8091:8080
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      key2: value2
